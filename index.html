@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Bounty</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="logo.jpeg" alt="Green Bounty Logo" class="nav-logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vegetables.html">Vegetables</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li id="search-container">
+                    <input type="text" id="search" placeholder="Search ..." onkeyup="handleSearch(event)">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Section with Video Background -->
+    <section class="welcome-section">
+        <div class="video-background">
+            <iframe 
+                src="https://www.youtube.com/embed/sGoY-M_O0Kc?si=PoHRofUsE3Mj-X8K&autoplay=1&mute=1&loop=1&playlist=sGoY-M_O0Kc&controls=0" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="welcome-title">
+            <h1>Welcome to Green Bounty</h1>
+            <h4>"Fresh from the farm, straight to your table!"            </h4>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <h1 class="about"><center>About Us</center></h1>
+    <p class="aboutstones">
+        Welcome to Green Bounty, where freshness meets quality! We are a local vegetable stand dedicated to providing farm-fresh, organic, and conventionally grown produce at affordable prices. Our mission is to support healthy living by offering crisp, flavorful, and nutritious vegetables sourced from trusted farmers. Whether you're looking for crunchy cucumbers, sweet bell peppers, or hearty potatoes, we’ve got you covered. Visit us today and taste the difference of fresh, local produce!
+    </p>
+
+    <!-- Product Catalog -->
+    <h1 class="best">Vegetables</h1>
+    <section id="catalog">
+        <div class="product" data-name="Russet potatoes">
+            <img src="v1.webp" alt="  Russet potatoes">
+            <h3>Russet potatoes</h3>
+            <p>Description:<br>
+                     Russet potatoes are starchy tubers with a brown, rough skin and white flesh. They are versatile and commonly used for baking, mashing, and frying.​
+                     <li>  BZ$8.55 per 5-pound bag.​</li>
+                      <li>Farming Method:conventionally (chemical) farmed.</li></p>
+            <span>$8.55 BZD</span>
+            <button onclick="addToCart('  Russet potatoes', 8.55)">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name=" Carrots">
+            <img src="v2.webp" alt=" Carrots">
+            <h3>Carrots</h3>
+            <p>Description:<br>
+                <li> Carrots are root vegetables, typically orange in color, though purple, red, yellow, and white varieties exist. They are crunchy when raw and sweeten when cooked.​
+                 </li>
+                 <li> Farming Metod:conventionally (chemical) farmed .</li>
+                <li> BZ$9.99 per 5-pound bag.​</li>
+               </p>
+            <span>$9.99 BZD</span>
+            <button onclick="addToCart(' Carrots', 9.99)">Add to Cart</button>
+        </div>
+        <div class="product" data-name=" Yellow Onions">
+            <img src="v3.webp" alt=" Yellow Onions">
+            <h3> Yellow Onions</h3>
+            <p>Description:<br>
+                <li>  Yellow onions have a golden-brown skin and a strong flavor that becomes sweet upon cooking. They are commonly used in a variety of dishes for their aromatic qualities.​</li>
+                <li>Price:BZ$5.94 per 5-pound bag.​</li>
+               <li>Farming Method: conventionally (chemical) farmed </li>
+                </p>
+            <span>$5.94 BZD</span>
+            <button onclick="addToCart(' Yellow Onions', 5.94)">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Green Bounty. All rights reserved.</p>
+    </footer>
+</body>
+</html>
