@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetables </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="logo.jpeg" alt="Green Bounty Logo" class="nav-logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vegetables.html">Vegetables</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li id="search-container">
+                    <input type="text" id="search" placeholder="Search ..." onkeyup="handleSearch(event)">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Catalog -->
+    <section id="catalog">
+        <div class="product" data-name="Russet potatoes">
+            <img src="v1.webp" alt="  Russet potatoes">
+            <h3>Russet potatoes</h3>
+            <p>Description:<br>
+                     Russet potatoes are starchy tubers with a brown, rough skin and white flesh. They are versatile and commonly used for baking, mashing, and frying.​
+                     <li>  BZ$8.55 per 5-pound bag.​</li>
+                      <li>Farming Method:conventionally (chemical) farmed.</li></p>
+            <span>$8.55 BZD</span>
+            <button onclick="addToCart('  Russet potatoes', 8.55)">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name=" Carrots">
+            <img src="v2.webp" alt=" Carrots">
+            <h3>Carrots</h3>
+            <p>Description:<br>
+                <li> Carrots are root vegetables, typically orange in color, though purple, red, yellow, and white varieties exist. They are crunchy when raw and sweeten when cooked.​
+                 </li>
+                 <li> Farming Metod:conventionally (chemical) farmed .</li>
+                <li> BZ$9.99 per 5-pound bag.​</li>
+               </p>
+            <span>$9.99 BZD</span>
+            <button onclick="addToCart(' Carrots', 9.99)">Add to Cart</button>
+        </div>
+        <div class="product" data-name=" Yellow Onions">
+            <img src="v3.webp" alt=" Yellow Onions">
+            <h3> Yellow Onions</h3>
+            <p>Description:<br>
+                <li>  Yellow onions have a golden-brown skin and a strong flavor that becomes sweet upon cooking. They are commonly used in a variety of dishes for their aromatic qualities.​</li>
+                <li>Price:BZ$5.94 per 5-pound bag.​</li>
+               <li>Farming Method: conventionally (chemical) farmed </li>
+                </p>
+            <span>$5.94 BZD</span>
+            <button onclick="addToCart(' Yellow Onions', 5.94)">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name="Tomatoes">
+            <img src="v4.webp" alt="Tomatoes">
+            <h3>Tomatoes</h3>
+            <p>Description:<br>
+                  Tomatoes are red, juicy fruits often used as vegetables in cooking. They are rich in vitamins and can be eaten raw or cooked in various dishes.​
+                <li> Price: BZ$20 per 5-pound bag.​
+                    World Prices
+                    </li>
+                 <li>Farming Method: organic farmed.​</li>
+            </p>
+            <span>$20 BZD</span>
+            <button onclick="addToCart('Tomatoes', 20)">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name=" Cucumbers">
+            <img src="v5.webp" alt="Cucumbers">
+            <h3> Cucumbers</h3>
+            <p>Description:<br>
+            
+              Cucumbers are long, green-skinned vegetables with a crisp, refreshing taste. They are commonly eaten raw in salads or pickled.​
+                
+              <li>    Price:BZ$5 per 5-pound bag.​</li>
+             <li> Farming Method: Organic farmed.</li><</p>
+            <span>$5 BZD</span>
+            <button onclick="addToCart(' Cucumbers', 5)">Add to Cart</button>
+        </div>
+        <div class="product" data-name="Bell Peppers">
+            <img src="v6.webp" alt="Bell Peppers">
+            <h3>Bell Peppers</h3>
+            <p>Description:<br>
+               Bell peppers are glossy, bell-shaped vegetables that come in various colors, including green, red, yellow, and orange. They have a sweet, mild flavor and are used in a variety of dishes.​
+                <li>Price: BZ$14 per 5-pound bag.​</li>
+               <li>  Farming Method: organic farmed .</li></p>
+            <span>$14 BZD</span>
+            <button onclick="addToCart('Bell Peppers', 14)">Add to Cart</button>
+        </div>
+        <!-- Add more products as needed -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Green Bounty. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
